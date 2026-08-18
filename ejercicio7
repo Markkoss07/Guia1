@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int precioOriginal, precioCondescuento;
+float porcentaje, descuento;
+
+cout << "Ingresar valor original: ";
+cin >> precioOriginal;
+cout << "Ingresar valor con descuento: ";
+cin >> precioCondescuento;
+
+descuento = precioOriginal - precioCondescuento;
+porcentaje = (float) descuento / precioOriginal * 100;
+
+cout << "El descuento aplicado fue del: " << porcentaje << "%";
+
+return 0;
+}
