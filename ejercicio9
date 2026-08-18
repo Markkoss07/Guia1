@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+//Una granja vende la caja de 12 unidades a $1000 y cada huevo suelto a $120.
+//Hacer un programa para ingresar la cantidad de huevos que compra un cliente y
+//mostrar por pantalla el importe total a pagar.
+
+
+int main(){
+int cajas, sueltos, ventaTotal, precioTotal;
+
+cout << "Ingresar la cantidad de huevos vendidos: ";
+cin >> ventaTotal;
+
+cajas = ventaTotal / 12;
+sueltos = ventaTotal % 12;
+precioTotal = cajas * 1000 + sueltos *120;
+
+cout << "Cantidad de cajas: " << cajas << endl;
+cout << "Cantidad de huevos sueltos: " << sueltos << endl;
+cout << "Total a pagar: $" << precioTotal << endl;
+
+return 0;
+}
