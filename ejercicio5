@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+float a, b, c, totalVentas;
+float porcentajeA, porcentajeB, porcentajeC;
+
+cout << "Havanna vendio: ";
+cin >> a;
+cout << "Jorgito vendio: ";
+cin >> b;
+cout << "Guaymallen vendio: ";
+cin >> c;
+
+totalVentas = a + b + c;
+porcentajeA = (float) a / totalVentas * 100;
+porcentajeB = (float) b / totalVentas * 100;
+porcentajeC = (float) c / totalVentas * 100;
+
+cout << "El porcentaje vendido de Havanna es: " << porcentajeA << "%" << endl;
+cout << "El porcentaje vendido de Jorgito es: " << porcentajeB << "%" << endl;
+cout << "El porcentaje vendido de Guaymallen es: " << porcentajeC << "%" << endl;
+
+
+return 0;
+}
