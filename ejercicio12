@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+//Ingresar el largo, el ancho y la profundidad de una pileta rectangular y calcular su volumen en litros
+//y la cantidad de horas necesarias para llenarla dado un caudal en litros/minuto que también se ingresa.
+
+int main(){
+float largo, ancho, profundidad, volumen, caudal, litros, minutos, horas;
+
+cout << "Ingresar el largo en metros: ";
+cin >> largo;
+cout << "Ingresar el ancho en metros: ";
+cin >> ancho;
+cout << "Ingresar la profundidad en metros: ";
+cin >> profundidad;
+cout << "Ingresar el caudal en litros por minuto: ";
+cin >> caudal;
+
+volumen = largo * ancho * profundidad;
+litros = volumen * 1000;
+minutos = litros / caudal;
+horas = (float) minutos / 60.0;
+
+cout << "Volumen de la pileta en: " << volumen << "m3" << endl;
+cout << "Volumen de la pileta en: " << litros << "litros" << endl;
+cout << "Se necesita: " << horas << "hs para llenar la pileta" << endl;
+
+return 0;
+}
