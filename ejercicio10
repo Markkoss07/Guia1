@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+//Hacer un programa para un cajero automático para ingresar un importe a retirar y
+//convertir el mismo en la cantidad de billetes de $1.000, $500, $200 y $100 a entregar.
+
+int main(){
+int valorIngresado, mil, quinientos, docientos, cien, resto;
+
+cout << "Ingresar monto a retirar: ";
+cin >> valorIngresado;
+
+mil = valorIngresado / 1000;
+resto = valorIngresado % 1000;
+
+quinientos = resto / 500;
+resto = resto % 500;
+
+docientos = resto / 200;
+resto = resto % 200;
+
+cien = resto / 100;
+
+cout << "Billetes de $1000: " << mil << endl;
+cout << "Billetes de $500: " << quinientos << endl;
+cout << "Billetes de $200: " << docientos << endl;
+cout << "Billetes de $100: " << cien << endl;
+
+return 0;
+}
