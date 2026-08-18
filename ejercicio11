@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+//La amplitud térmica es la diferencia entre la temperatura máxima y la temperatura mínima en una zona
+//y tiempo determinado. Dada la temperatura máxima y la temperatura mínima de San Fernando de ayer,
+//calcular y mostrar la amplitud térmica.
+
+int main(){
+float temperaturaMaxima, temperaturaMinima, amplitudTermica;
+
+cout << "Ingrese la temperatura maxima: ";
+cin >> temperaturaMaxima;
+cout << "Ingrese la temperatura minima: ";
+cin >> temperaturaMinima;
+
+amplitudTermica = temperaturaMaxima - temperaturaMinima;
+
+cout << "La amplitud termica es: " << amplitudTermica << " grados" << endl;
+
+return 0;
+}
