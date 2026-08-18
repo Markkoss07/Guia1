@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int asientosTotales, asientosComprados;
+int restoDisponible, restoOcupados;
+float porcentajeDisponible, porcentajeOcupados;
+
+cout << "Ingresar la capacidad de asientos en el avion: ";
+cin >> asientosTotales;
+cout << "Ingresar la cantidad de asientos comprados: ";
+cin >> asientosComprados;
+
+restoDisponible = asientosTotales - asientosComprados;
+restoOcupados = asientosComprados % asientosTotales;
+
+porcentajeOcupados = (float) asientosComprados / asientosTotales * 100;
+porcentajeDisponible = (float) restoDisponible / asientosTotales * 100;
+
+cout << "Asientos disponibles: " << restoDisponible<< endl;
+cout << "Asientos ocupados: " << restoOcupados << endl;
+
+cout << "El porcentaje de asientos disponibles es: " << porcentajeDisponible << "%" <<  endl;
+cout << "El porcentaje de asientos ocupados es: " << porcentajeOcupados << "%" << endl;
+
+
+return 0;
+}
