@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+float horasTrabajadas, pagoPorhora, resultado;
+
+cout << "Ingresar las horas trabajadas: ";
+cin >> horasTrabajadas;
+cout << "Valor por hora trabaja: ";
+cin >> pagoPorhora;
+
+resultado = (float) horasTrabajadas * pagoPorhora;
+
+cout << "Su sueldo es: " << resultado;
+
+return 0;
+}
