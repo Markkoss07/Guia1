@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+const int SUELDO_FIJO = 500000;
+const int VENTA_POR_AUTO = 70000;
+int autosVendidos, sueldoTotal;
+
+cout << "Ingresar la cantidad de autos vendidos: ";
+cin >> autosVendidos;
+sueldoTotal = (autosVendidos * VENTA_POR_AUTO) + SUELDO_FIJO;
+
+cout << "Sueldo total a pagar es: " << sueldoTotal;
+
+return 0;
+}
