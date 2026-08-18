@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int cantidadMinutos, horas;
+
+cout << "Ingresar cantidad de minutos: ";
+cin >> cantidadMinutos;
+
+horas = cantidadMinutos / 60;
+
+cout << "Equivalen a " << horas << " horas y " << cantidadMinutos % 60 << " minutos ";
+
+return 0;
+}
