@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int num1, num2;
+int modificado1, modificado2;
+
+cout << "Ingresar el primer numero: ";
+cin >> num1;
+cout << "Ingresar el segundo numero: ";
+cin >> num2;
+
+modificado1 = num2;
+modificado2 = num1;
+
+cout << "Tu primer numero modificado es: " << modificado1 << endl;
+cout << "Tu segundo numero modificado es: " << modificado2;
+
+
+return 0;
+}
