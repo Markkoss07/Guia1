@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+//const int UNA_HORA = 60;
+int cantidadMinutos, minutos, dias, horas;
+
+cout << "Ingresar cantidad en minutos: ";
+cin >> minutos;
+
+dias = minutos / 1440;
+horas = (minutos % 1440) / 60;
+cantidadMinutos = minutos % 60;
+
+cout << "Esto equivale a " << dias << "dias" << horas << "hs" << cantidadMinutos << "minutos";
+
+return 0;
+}
