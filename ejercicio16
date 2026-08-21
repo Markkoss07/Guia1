@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int importeCompra, descuento, totalApagar, descuentoValor;
+
+cout << "Ingresar el importe de compra: ";
+cin >> importeCompra;
+cout << "Ingresar el descuento: ";
+cin >> descuento;
+
+descuentoValor = (importeCompra * descuento) / 100;
+totalApagar = importeCompra - descuentoValor;
+
+cout << "Importe sin descuento: " << importeCompra <<endl
+<< "Un descuento de: " << descuentoValor << endl
+<< "Total a pagar: " << totalApagar;
+
+return 0;
+}
