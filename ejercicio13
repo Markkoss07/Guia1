@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int recaudacion1, recaudacion2, recaudacion3, recaudacion4, resultadoPromedio, mes;
+float porcentaje1, porcentaje2, porcentaje3, porcentaje4;
+
+cout << "Ingresar la recaudacion de la semana 1: ";
+cin >> recaudacion1;
+cout << "Ingresar la recaudacion de la semana 2: ";
+cin >> recaudacion2;
+cout << "Ingresar la recaudacion de la semana 3: ";
+cin >> recaudacion3;
+cout << "Ingresar la recaudacion de la semana 4: ";
+cin >> recaudacion4;
+
+mes = recaudacion1 + recaudacion2 + recaudacion3 + recaudacion4;
+resultadoPromedio = mes / 4;
+
+porcentaje1 = (recaudacion1 * 100) / mes;
+porcentaje2 = (recaudacion2 * 100) / mes;
+porcentaje3 = (recaudacion3 * 100) / mes;
+porcentaje4 = (recaudacion4 * 100) / mes;
+
+cout << "El promedio por semana es: $" << resultadoPromedio << endl;
+cout << "El porcentaje de la semana 1 es del " << porcentaje1 << "%" << endl;
+cout << "El porcentaje de la semana 2 es del " << porcentaje2 << "%" << endl;
+cout << "El porcentaje de la semana 3 es del " << porcentaje3 << "%" << endl;
+cout << "El porcentaje de la semana 4 es del " << porcentaje4 << "%" << endl;
+
+
+return 0;
+}
