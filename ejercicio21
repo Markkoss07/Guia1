@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+int potenciaArtefacto, cantidadHoras, precioKwh;
+float consumoMensual, costoMensual;
+
+cout << "Ingresar la potencia de este artefacto: ";
+cin >> potenciaArtefacto;
+cout << "Ingresar las horas de uso diario: ";
+cin >> cantidadHoras;
+cout << "Ingresar el precio por Kwh: ";
+cin >> precioKwh;
+
+//El consumo en kWh se calcula como: (potencia en watts × horas diarias × 30 días) / 1000.
+
+consumoMensual = (potenciaArtefacto * cantidadHoras * 30) / 1000;
+costoMensual = consumoMensual * precioKwh;
+
+cout << "El consumo mensual es de: " << consumoMensual << " kWh" << endl
+<< "El costo mensual es de: $" << costoMensual;
+
+return 0;
+}
