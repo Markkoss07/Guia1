@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int cantidadHoras, dia, horas;
+
+cout << "Ingresar una cantidad de horas: ";
+cin >> cantidadHoras;
+
+dia = cantidadHoras / 24;
+horas = cantidadHoras % 24;
+
+cout << "Es igual a " << dia << "dias y " << horas << "hs" <<endl;
+
+return 0;
+}
