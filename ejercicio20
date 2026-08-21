@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+float precioVenta, precioCosto, ganancia, margenGanancia;
+
+cout << "Ingresar el precio de venta: ";
+cin >> precioVenta;
+cout << "Ingresar el precio de costo del producto: ";
+cin >> precioCosto;
+
+ganancia = precioVenta - precioCosto;
+margenGanancia = (ganancia * 100) / precioVenta;
+
+cout << "El margen de ganancia es del " << margenGanancia << "%" << endl
+<< "La ganancia es de " << ganancia << " pesos" << endl;
+
+return 0;
+}
