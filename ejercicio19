@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+#include <iomanip>
+
+int main(){
+float bytes, resultadoKb, resultadoMb, resultadoGb;
+const int KB = 1024, MB = 1048576, GB = 1073741824;
+
+cout << "Ingresar una cantidad de bytes: ";
+cin >> bytes;
+
+resultadoKb = (float) bytes / KB;
+resultadoMb = (float) bytes / MB;
+resultadoGb = (float) bytes / GB;
+
+cout << "Estos bytes equivalen a: " << endl
+<< bytes << " bytes = " << resultadoKb << " KB" << endl
+<< bytes << " bytes = " << resultadoMb << " MB" << endl
+<< bytes << " bytes = " << fixed << setprecision(5) << resultadoGb << " GB" << endl;
+
+return 0;
+}
