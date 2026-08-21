@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+#include <iomanip>
+
+int main(){
+float peso, altura, imc;
+
+cout << "Ingresar peso corporal en kilogramos: ";
+cin >> peso;
+cout << "Ingresar altura en metros: ";
+cin >> altura;
+
+imc = peso / (altura * altura);
+
+cout << "El IMC de esta persona es: " << std::fixed << std::setprecision(2) << imc;
+
+return 0;
+}
