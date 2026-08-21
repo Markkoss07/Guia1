@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int distanciaMetros;
+float km, cm, pds;
+
+cout << "Ingresar cantidad en metros: ";
+cin >> distanciaMetros;
+
+km = (float) distanciaMetros * 0.001;
+cm = (float) distanciaMetros * 100;
+pds = (float) distanciaMetros * 39.37;
+
+cout << "Equivale a: " << endl
+<< km << " kilometros" << endl
+<< cm << " centimetros" << endl
+<< pds << " pulgadas";
+
+
+return 0;
+}
